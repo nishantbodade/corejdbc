@@ -5,21 +5,21 @@ import java.sql.DriverManager;
 
 public class ProductsComponent {
 
-	public boolean tryConnection() throws Exception {	
-
+	public boolean tryConnection() throws Exception {
 		
-		Connection connection = 
-		DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels?"
-				+ "user=root&password=pluralsight&serverTimezone=UTC");			
+		Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/classicmodels?"
+				+"user=root&password=root"
+				);
 		
+		boolean isValid=connection.isValid(2);
 		
-		boolean isValid = connection.isValid(2);
+		connection.close();
 		
-		
-		connection.close();	
-			
 		
 		return isValid;
+
+		
+	
     }
 
 }
