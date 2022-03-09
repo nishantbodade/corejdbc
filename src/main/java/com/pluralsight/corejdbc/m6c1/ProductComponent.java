@@ -19,7 +19,7 @@ public class ProductComponent {
 				"UPDATE productLines SET htmlDescription = ? where productLine = ?";
 		
 		try(Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=pluralsight&serverTimezone=UTC");
+				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=root&serverTimezone=UTC");
 				
 		PreparedStatement preparedStatement = connection.prepareStatement(sqlString);){
 		
@@ -39,7 +39,7 @@ public class ProductComponent {
 				"SELECT htmlDescription FROM productLines WHERE productLine = ?";
 		
 		try(Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=pluralsight&serverTimezone=UTC");
+				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=root&serverTimezone=UTC");
 		
 		PreparedStatement preparedStatement = connection.prepareStatement(sqlString);){
 		
@@ -61,7 +61,7 @@ public class ProductComponent {
 				"UPDATE productLines SET image = ? where productLine = ?";
 		
 		try(Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=pluralsight&serverTimezone=UTC");
+				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=root&serverTimezone=UTC");
 		PreparedStatement preparedStatement = connection.prepareStatement(sqlString);){
 		
 		preparedStatement.setBinaryStream(1, inStream);
@@ -81,7 +81,7 @@ public class ProductComponent {
 				"SELECT image FROM productLines WHERE productLine = ?";
 		
 		try(Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=pluralsight&serverTimezone=UTC");
+				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=root&serverTimezone=UTC");
 
 		
 		PreparedStatement preparedStatement = connection.prepareStatement(sqlString);){

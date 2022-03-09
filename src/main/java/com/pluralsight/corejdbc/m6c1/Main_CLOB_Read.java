@@ -3,6 +3,7 @@ package com.pluralsight.corejdbc.m6c1;
 import java.io.Reader;
 
 public class Main_CLOB_Read {
+	
 
 	public static void main(String[] args) throws Exception {
 		try {
