@@ -6,7 +6,8 @@ import java.sql.Connection;
 
 public class ProductsComponent {
 
-	public boolean tryConnection() throws Exception {	
+	public boolean tryConnection() throws Exception {
+		
 
 		Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 		
