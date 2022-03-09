@@ -17,7 +17,7 @@ public class ProductsComponent_TCF {
 		try {
 
 			connection = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/classicmodels?user=root&password=pluralsight&serverTimezone=UTC");
+					"jdbc:mysql://localhost:3306/classicmodels?user=root&password=root&serverTimezone=UTC");
 			statement = connection.createStatement();
 			resultSet = statement.executeQuery("SELECT * FROM xproducts;");
 
