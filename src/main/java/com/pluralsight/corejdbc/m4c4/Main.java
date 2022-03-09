@@ -8,7 +8,7 @@ public class Main {
 
 		try {
 			ProductsComponent comp = new ProductsComponent();
-			comp.printProductList(50.0, 100.0);
+			comp.printProductList(50.0, 100.0 );
 		} catch (Exception exception) {
 			util.ExceptionHandler.handleException(exception);
 		}
