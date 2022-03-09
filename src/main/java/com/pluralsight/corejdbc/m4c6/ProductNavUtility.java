@@ -7,6 +7,7 @@ public class ProductNavUtility {
 	
 	ResultSet resultSet = null;
 	
+	
 	public ProductNavUtility(ResultSet resultSet) {
 		this.resultSet = resultSet;
 	}
