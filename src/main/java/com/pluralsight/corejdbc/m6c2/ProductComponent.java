@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 
 public class ProductComponent {
 
+	
 	public void listProductsBy(String productLine) throws Exception {
 
 		try(Connection connection = DriverManager.getConnection(

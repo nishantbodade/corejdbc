@@ -6,6 +6,7 @@ import java.sql.Connection;
 
 
 public class HrComponent {
+	
 
 	public String updateEmail(int employeeNumber, String newEmail) throws Exception {
 
