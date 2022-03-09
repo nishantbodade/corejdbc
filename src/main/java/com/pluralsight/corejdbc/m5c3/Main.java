@@ -3,6 +3,7 @@ package com.pluralsight.corejdbc.m5c3;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
+		
 
 		try {
 			HrComponent comp = new HrComponent();

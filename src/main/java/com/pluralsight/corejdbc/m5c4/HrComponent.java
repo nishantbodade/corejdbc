@@ -11,7 +11,7 @@ public class HrComponent {
 	public boolean deleteEmployee(String employeeNumber) throws Exception {
 
 		try(Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=pluralsight&serverTimezone=UTC");
+				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=root&serverTimezone=UTC");
 
 		PreparedStatement preparedStatement = connection
 				.prepareStatement("DELETE FROM employees WHERE employeeNumber = ?");){
@@ -31,7 +31,7 @@ public class HrComponent {
 			String jobTitle) throws Exception {
 
 		Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=pluralsight&serverTimezone=UTC");
+				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=root&serverTimezone=UTC");
 
 		PreparedStatement preparedStatement = connection.prepareStatement(
 				"INSERT INTO employees " + "(lastName, firstName, extension, email, officeCode, jobTitle) "
@@ -65,7 +65,7 @@ public class HrComponent {
 	public int replaceSalesManager(String managerBeingReplaced, String replacementManager) throws Exception {
 
 		Connection connection = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=pluralsight&serverTimezone=UTC");
+				"jdbc:mysql://localhost:3306/classicmodels?user=root&password=root&serverTimezone=UTC");
 
 		PreparedStatement preparedStatement = connection
 				.prepareStatement("UPDATE employees SET reportsTo = ? WHERE reportsTo = ?");
