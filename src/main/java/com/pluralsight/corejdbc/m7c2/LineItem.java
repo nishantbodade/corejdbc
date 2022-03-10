@@ -1,6 +1,7 @@
 package com.pluralsight.corejdbc.m7c2;
 
 public class LineItem {
+	
 	public String productCode;
 	public int quantityOrdered;
 	public double priceEach;

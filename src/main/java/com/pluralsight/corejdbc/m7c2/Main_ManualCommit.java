@@ -3,6 +3,7 @@ package com.pluralsight.corejdbc.m7c2;
 public class Main_ManualCommit {
 	
 	public static void main(String[] args) throws Exception {
+		
 		int customerNumber = 112;
 		LineItem lineItem = new LineItem("S10_1949", 10, 100.00);
 		

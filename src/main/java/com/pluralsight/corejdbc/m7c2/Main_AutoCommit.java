@@ -1,6 +1,7 @@
 package com.pluralsight.corejdbc.m7c2;
 
 public class Main_AutoCommit {
+	
 
 	public static void main(String[] args) throws Exception {
 		int customerNumber = 103;
