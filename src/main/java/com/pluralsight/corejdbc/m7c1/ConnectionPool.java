@@ -7,12 +7,13 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 public class ConnectionPool {
+	
 	  
     private static HikariDataSource dataSource;
  
     static {
     	HikariConfig config = new HikariConfig();
-        config.setJdbcUrl( "jdbc:mysql://localhost:3306/classicmodels?user=root&password=pluralsight&serverTimezone=UTC" );
+        config.setJdbcUrl( "jdbc:mysql://localhost:3306/classicmodels?user=root&password=root&serverTimezone=UTC" );
         
         dataSource = new HikariDataSource( config );
         dataSource.setMaximumPoolSize(4);

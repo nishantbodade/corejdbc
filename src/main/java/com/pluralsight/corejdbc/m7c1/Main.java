@@ -2,6 +2,7 @@ package com.pluralsight.corejdbc.m7c1;
 
 public class Main implements Runnable{
 	
+	
 	public void run() {
 		for(int i = 0; i < 3; i++) {
 			
